@@ -139,7 +139,7 @@ export function testSetValid(root: string) {
 }
 
 export async function preloadLatestRoot() {
-  const url = "https://api.pcd-passport.com/semaphore/latest-root/1";
+  const url = "https://api.zupass.org/semaphore/latest-root/1";
   console.log(`[CRYPTO] fetching latest merkle root ${url}`);
 
   const res = await fetch(url);
@@ -149,7 +149,7 @@ export async function preloadLatestRoot() {
 }
 
 async function fetchIsValidRoot(root: string) {
-  const url = `https://api.pcd-passport.com/semaphore/historic/1/${root}`;
+  const url = `https://api.zupass.org/semaphore/historic/1/${root}`;
   console.log(`[CRYPTO] fetching merkle root ${url}`);
 
   const res = await fetch(url);
