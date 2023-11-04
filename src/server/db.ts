@@ -2,9 +2,9 @@ import { Client, ClientConfig, Pool, PoolConfig } from "pg";
 import { Transaction } from "../common/model";
 import { AuthToken } from "./auth";
 
-/** Credentials automatically come from env.PGUSER etc, or from PGURL. */
+/** Credentials automatically come from env.PGUSER etc, or from DATABASE_URL. */
 const dbConfig: ClientConfig = {
-  connectionString: process.env.PGURL,
+  connectionString: process.env.DATABASE_URL,
   connectionTimeoutMillis: 5000,
   query_timeout: 5000,
   statement_timeout: 5000,
