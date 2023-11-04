@@ -8,7 +8,6 @@ const dbConfig: ClientConfig = {
   connectionTimeoutMillis: 5000,
   query_timeout: 5000,
   statement_timeout: 5000,
-  database: "zucast",
 };
 
 const poolConfig: PoolConfig = {
