@@ -5,7 +5,7 @@ export enum Cookie {
 
 export const EXTERNAL_NULLIFIER = BigInt(420);
 
-export const MAX_POST_LENGTH = 280;
+export const MAX_POST_LENGTH = 1000;
 
 export const RATE_LIMIT_ACTIONS_PER_HOUR = 1000;
 
