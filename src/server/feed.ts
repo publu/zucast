@@ -299,9 +299,6 @@ export class ZucastFeed {
    */
   async append(tx: Transaction): Promise<User> {
     // Verify
-    if (this.state === "new") {
-      throw new Error("Feed initializing, try again soon");
-    }
     await this.verify(tx);
 
     // Execute
